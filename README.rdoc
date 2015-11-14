@@ -1,7 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A website for creating and building a beauty services business
 
 Things you may want to cover:
 
