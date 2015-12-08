@@ -7,14 +7,14 @@
         <div class= "well">
         <h2 class = "text-center">Pretty Girls</h2>
         <h4>Sign up free to receive the best in beauty consultation services by one of our independent local consultants!</h4>
-        <%= link_to "PrettyGirl Sign Up", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %> 
+        <%= link_to "PrettyGirl Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %> 
         </div>
     </div>
     <div class = "col-md-4">
         <div class= "well">
         <h2 class = "text-center">Consultants</h2>
         <h4>Sign up as a beauty constultant for only $15/month or $100/year*</h4>
-        <%= link_to "Consultant Sign Up", new_user_registration_path, class: 'btn btn-success btn-lg btn-block' %> 
+        <%= link_to "Consultant Sign Up", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %> 
 
         </div>
     </div>
@@ -22,7 +22,7 @@
         <div class= "well">
         <h2 class = "text-center">Fountains of Youth</h2>
         <h4>Sign up free to provide a world class atmosphere of beauty and health</h4>
-        <%= link_to "Fountain Sign Up", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %> 
+        <%= link_to "Fountain Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %> 
         </div>
     </div>
 </div>
