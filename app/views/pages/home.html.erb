@@ -2,11 +2,71 @@
     <h1>You're so Pretty!!</h1>
     <h3> Bring out the best in you with our prettyGirl makeover!</h3>
 </div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    
+    <div class="item active">
+      <img src="/make_up/app/assets/images/exgirl.jpg" alt="PrettyGirls">
+      <div class="carousel-caption">
+        <h4><%= link_to "PrettyGirl Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %> </h4>
+        <p>Sign up free to receive the best in beauty consultation services by one of our independent local consultants!</p>
+      </div>
+    </div> <!-- Item Ends-->
+    
+    
+    <div class="item">
+      <img src="https://pixabay.com/get/ee31b8092af11c22d9584518a33219c8b66ae3d11db8194592f0c77a_1920.jpg" alt="Consultants">
+      <div class="carousel-caption">
+        <h4><%= link_to "Consultant Sign Up", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %> </h4>
+        <p>Sign up as a beauty constultant for only $15/month or $100/year*!</p>
+      </div>
+    </div> <!-- Item Ends-->
+    
+    <div class="item">
+      <img src="https://pixabay.com/get/ea35b00b28f21c22d9584518a34d4190e177ead204b015459cf8c778a1e9b5_1920.jpg" alt="Fountains">
+      <div class="carousel-caption">
+        <h4><%= link_to "Fountain Sign Up", new_user_registration_path(plan: @fountain_plan.id), class: 'btn btn-primary btn-lg btn-block' %> </h4>
+        <p>Sign up free to provide a world class atmosphere of beauty and health</p>
+      </div>
+    </div> <!-- Item Ends-->
+    ...
+  </div> <!-- Carousel inner div -->
+  
+  <ul class = "list-group slider-list  col-md-4">
+      <li data-target= "#myCarousel" data-slide-to= "0" class= "list-group-item active">
+          <img src= "https://pixabay.com/get/e830b60f21f11c3e955b4203e44c4e91fe76e6d110b9154696f0c9.png" class= "img-thumbnail img-slide"><h4>PrettyGirl Sign Up</h4>
+          <p>Come relax and get your pretty on</p>
+      </li>
+      
+      <li data-target= "#myCarousel" data-slide-to= "1" class= "list-group-item">
+          <img src= "https://pixabay.com/get/ee31b8092af11c22d9584518a33219c8b66ae3d11db8194592f0c77a_1920.jpg" class= "img-thumbnail img-slide"><h4>Consultants Sign Up</h4>
+          <p>Keep your friends and neighbors pretty!!</p>
+      </li>
+      
+      <li data-target= "#myCarousel" data-slide-to= "2" class= "list-group-item">
+          <img src= "https://pixabay.com/get/ea37b40b2ff21c22d9584518a33219c8b66ae3d11db8194593f9c57e_1920.jpg" class= "img-thumbnail img-slide"><h4>fountain Sign Up</h4>
+          <p>Spread beauty and health in the world</p>
+      </li>
+  </ul>
+
+ 
+</div>
+
+
+
+
+
+
+
 <div class = "row">
     <div class = "col-md-4">
         <div class= "well">
         <h2 class = "text-center">Pretty Girls</h2>
-        <h4>Sign up free to receive the best in beauty consultation services by one of our independent local consultants!</h4>
+        <p>Sign up free to receive the best in beauty consultation services by one of our independent local consultants!</p>
         <%= link_to "PrettyGirl Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %> 
         </div>
     </div>
@@ -15,14 +75,14 @@
         <h2 class = "text-center">Consultants</h2>
         <h4>Sign up as a beauty constultant for only $15/month or $100/year*</h4>
         <%= link_to "Consultant Sign Up", new_user_registration_path(plan: @pro_plan.id), class: 'btn btn-success btn-lg btn-block' %> 
-
+        <br/>   
         </div>
     </div>
      <div class = "col-md-4">
         <div class= "well">
         <h2 class = "text-center">Fountains of Youth</h2>
         <h4>Sign up free to provide a world class atmosphere of beauty and health</h4>
-        <%= link_to "Fountain Sign Up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-primary btn-lg btn-block' %> 
+        <%= link_to "Fountain Sign Up", new_user_registration_path(plan: @fountain_plan.id), class: 'btn btn-primary btn-lg btn-block' %> 
         </div>
     </div>
 </div>
