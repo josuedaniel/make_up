@@ -60,3 +60,16 @@
     margin-right:5px;
     
 }
+
+@media(min-width:992px) {
+#myCarousel{padding-right:33.3333%;}
+#myCarousel .carousel-controls{display:none;}
+
+}
+
+@media(max-width:991px){
+    .carousel-caption p, #myCarousel .list-group {display:none;}
+}
+ @media(max-width:1200px){
+     .slider-list p{display:none;}
+ }
